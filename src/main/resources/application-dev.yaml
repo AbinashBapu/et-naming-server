@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: et-naming-server
+  config:
+    activate:
+      on-profile: dev
+server:
+  port: 8761
+eureka:
+  instance:
+#    hostname: localhost    # If want hostname as localhost then uncomment it, i am using ip address so commented it
+    prefer-ip-address: true
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    selfRegister: false
+
