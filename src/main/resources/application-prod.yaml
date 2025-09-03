@@ -8,10 +8,10 @@ server:
   port: 8080
 eureka:
   instance:
-#    hostname: localhost    # If want hostname as localhost then uncomment it, i am using ip address so commented it
-    prefer-ip-address: true
+    hostname: naming-server    # If want hostname as localhost then uncomment it, i am using ip address so commented it
+    # prefer-ip-address: true
   client:
-    registerWithEureka: false
-    fetchRegistry: false
-    selfRegister: false
+    register-with-eureka: false
+    fetch-registry: false
+    self-register: false
 
